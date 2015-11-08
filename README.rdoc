@@ -1,28 +1,31 @@
-== README
+testing specs for recipes:
+name: string 
+summary: text
+description: text
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- name must be present
+- name must be 5 - 100
+- name must be unique
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+- summary must be present
+- summary must be 10 - 150
+
+- description must be present
+- description must be 20 - 500
+
+- chef_id must be present
+
+
+testing specs for chefs:
+chefname: string 
+email: text
+
+- chefname must be present
+- chefname must be 3 - 40
+
+- email must be present
+- email must be unique
+- email must be valid
+
+
