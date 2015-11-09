@@ -1,2 +1,31 @@
  rails g generate uploader Picture
  
+
+ git
+ ---
+
+ making a new branch
+ -------------------
+
+ git checkout -b images-uploader
+ git branch
+
+---- lots of commits to images-uploader
+
+ Back to master
+ --------------
+ git checkout master
+
+ Merging images-uploader branch to master
+ ----------------------------------------
+ git merge images-uploader
+ (Make sure you are in master by typing "git branch")
+
+ delete the images-uploader branch
+ ---------------------------------
+ git branch -d images-uploader
+             |________________> if the changes are merged to master
+            -D
+             |________________> even if the changes are not merged 
+                                and want to abandon the branch.
+
