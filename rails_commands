@@ -29,3 +29,20 @@
              |________________> even if the changes are not merged 
                                 and want to abandon the branch.
 
+When ever you need authentication:
+
+Add 
+  gem 'bcrypt', '3.1.7'
+  to Gemfile
+
+run 
+  bundle install
+
+and in the model add 
+   has_secure_password
+
+And in database add a column named password_digest :string
+
+model.password = 'saasd' to set it
+model.authenticate('password') returns model object if it is correct. Elese returns false.
+
